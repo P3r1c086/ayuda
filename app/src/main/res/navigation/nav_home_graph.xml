@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home_graph"
+    app:startDestination="@id/principalHomeFragment">
+    <fragment
+        android:id="@+id/principalHomeFragment"
+        android:name="com.pedroaguilar.ayuda.PrincipalHomeFragment"
+        android:label="Panel principal"
+        tools:layout="@layout/fragment_principal_home">
+        <action
+            android:id="@+id/action_principalHomeFragment_to_categoriasDonarFragment"
+            app:destination="@id/categoriasDonarFragment" />
+        <action
+            android:id="@+id/action_principalHomeFragment_to_busquedasFragment"
+            app:destination="@id/busquedasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriasDonarFragment"
+        android:name="com.pedroaguilar.ayuda.CategoriasDonarFragment"
+        android:label="Categorías"
+        tools:layout="@layout/fragment_categorias_donar">
+        <action
+            android:id="@+id/action_categoriasDonarFragment_to_uploadFragment"
+            app:destination="@id/uploadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.pedroaguilar.ayuda.FavoritesFragment"
+        android:label="Favoritos"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.pedroaguilar.ayuda.PerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfilFragment_to_editPerfilFragment"
+            app:destination="@id/editPerfilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadFragment"
+        android:name="com.pedroaguilar.ayuda.UploadFragment"
+        android:label="Subir"
+        tools:layout="@layout/fragment_upload" />
+    <fragment
+        android:id="@+id/busquedasFragment"
+        android:name="com.pedroaguilar.ayuda.BusquedasFragment"
+        android:label="Buscar"
+        tools:layout="@layout/fragment_busquedas" />
+    <fragment
+        android:id="@+id/editPerfilFragment"
+        android:name="com.pedroaguilar.ayuda.EditPerfilFragment"
+        android:label="Editar datos"
+        tools:layout="@layout/fragment_edit_perfil" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.pedroaguilar.ayuda.SettingsFragment"
+        android:label="Configuración"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

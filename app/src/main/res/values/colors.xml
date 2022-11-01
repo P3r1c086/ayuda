@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deep_purple_100">#b388ff</color>
+    <color name="deep_purple_200">#7c4dff</color>
+    <color name="deep_purple_400">#651fff</color>
+    <color name="blue_100">#82b1ff</color>
+    <color name="blue_200">#448aff</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_app">#FFD7C6F8</color>
+    <color name="color_white_t">#CCFFFFFF</color>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".UploadFragment"
+    android:gravity="center_horizontal"
+    android:background="@color/background_app">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_upload"
+        android:layout_marginTop="40dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTitleArticle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_title"
+        app:helperText="@string/validation_field_required"
+        app:startIconDrawable="@drawable/ic_title"
+        android:layout_marginVertical="@dimen/common_padding_default"
+        android:layout_marginHorizontal="@dimen/common_padding_default">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTitleArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDescriptionArticle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_description"
+        app:helperText="@string/validation_field_required"
+        app:counterEnabled="true"
+        app:counterMaxLength="@integer/description_max_length"
+        app:startIconDrawable="@drawable/ic_notes"
+        android:layout_marginVertical="@dimen/common_padding_default"
+        android:layout_marginHorizontal="@dimen/common_padding_default"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDescriptionArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_btn_subir"
+        android:textStyle="bold"
+        app:cornerRadius='30sp'
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/common_padding_default"
+        android:layout_marginHorizontal="@dimen/common_padding_default"/>
+
+</LinearLayout>
